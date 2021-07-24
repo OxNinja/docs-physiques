@@ -1,0 +1,62 @@
+site_name: Docs physiques
+site_url: https://physiques.0xninja.fr
+theme:
+  name: material
+  language: fr
+  icon:
+    logo: fontawesome/solid/broadcast-tower
+  favicon: assets/favicon.jpg
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.expand
+    - navigation.top
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      primary: teal
+      accent: teal
+      scheme: default
+      toggle:
+        icon: material/weather-sunny
+        name: Passer au mode nuit
+
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      accent: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Passer au mode jour
+
+markdown_extensions:
+  - toc:
+      permalink: '#'
+      toc_depth: 3
+      slugify: !!python/name:pymdownx.slugs.uslugify_encoded
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - abbr
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.snippets
+
+extra:
+  social:
+    - icon: fontawesome/solid/globe
+      link: https://0xninja.fr
+    - icon: fontawesome/brands/github
+      link: https://github.com/OxNinja
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/0x_Ninja
+
+extra_javascript:
+  - javascripts/config.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
