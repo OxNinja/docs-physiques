@@ -4,7 +4,7 @@ theme:
   name: material
   language: fr
   icon:
-    logo: fontawesome/solid/broadcast-tower
+    logo: fontawesome/solid/tower-broadcast
   favicon: assets/favicon.jpg
   features:
     - navigation.instant
